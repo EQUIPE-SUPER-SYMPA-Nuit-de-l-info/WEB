@@ -88,8 +88,9 @@ section[title='sec4'] {
 
 section[title='sec5'] {
     background-color: #00B4D8;
-    left: 20vw;
+    left: 30vw;
     top: 50vh;
+    width: 15vw;
 }
 
 .blink-bg{

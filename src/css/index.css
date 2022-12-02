@@ -1,5 +1,5 @@
 body {
-    background-color: #f6f4d2;
+    background-color: #f6f6f6;
     font-family: 'Sora', sans-serif;
 }
 
@@ -20,7 +20,10 @@ header, section {
     border-radius: 8px;
     padding: 0px 20px 0px 20px;
 }
-
+h1{
+    color: #03045E;
+    font-size: 3rem;
+}
 header {
     margin-right: auto;
     margin-left: auto;
@@ -46,7 +49,7 @@ section:hover, header:hover {
 section[title='sec1'] {
     display: flex;
     flex-direction: column;
-    background-color: #c9cba3;
+    background-color: #0096C7;
     align-items: center;
     width: fit-content;
     left: 15vw;
@@ -60,11 +63,13 @@ section[title='sec1'] img {
 
 section[title='sec2'] {
     color: white;
-    background-color: #723d46;
+    background-color: #0077B6;
     right: 15vw;
     top: 30vh;
 }
-
+section[title='sec1'] h2 {
+    color: white;
+}
 section[title='sec2'] p {
     color: white;
 }
@@ -82,24 +87,8 @@ section[title='sec4'] {
 }
 
 section[title='sec5'] {
-    background-color: #CAB1BD;
+    background-color: #00B4D8;
     left: 20vw;
     top: 50vh;
-}
 
-.blink-bg{
-    color: #fff;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 5px;
-    animation: blinkingBackground 0.2s infinite;
-    position: absolute;
-    top: 1000%;
-}
-@keyframes blinkingBackground{
-    0%		{ background-color: #10c018;}
-    25%		{ background-color: #1056c0;}
-    50%		{ background-color: #ef0a1a;}
-    75%		{ background-color: #254878;}
-    100%	{ background-color: #04a1d5;}
 }

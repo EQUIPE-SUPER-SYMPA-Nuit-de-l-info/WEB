@@ -1,0 +1,24 @@
+name: deploiement site
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  deploiement-site:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+        - name: kubeconfig
+          uses: azure/k8s-set-context@v2
+          with:
+            method: kubeconfig
+            kubeconfig: ${{ secrets.KUBECONFIG }}
+        - name: deploiement sur le cluster
+          uses: jtalk/k8s-deploy@v2
+          with:
+            namespace: 'nuit-info'
+            manifests: |
+              ${{ github.workspace }}/deploiement-site.yaml
+              ${{ github.workspace }}/autoscale.yaml

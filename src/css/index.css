@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #f6f4d2;
     font-family: 'Sora', sans-serif;
 }
 
@@ -7,14 +7,13 @@ p {
     color: black;
 }
 
-div {
-    display: flex;
-    gap: 10px
+a {
+    text-decoration: none;
+    color: black;
 }
 
 img {
     width: 150px;
-    height: fit-content;
 }
 
 header, section {
@@ -23,11 +22,10 @@ header, section {
 }
 
 header {
-    box-shadow: 5px 5px 5px #613d31;
     margin-right: auto;
     margin-left: auto;
     width: fit-content;
-    background-color: #CDACA1;
+
 }
 
 section {    
@@ -46,29 +44,45 @@ section:hover, header:hover {
 }
 
 section[title='sec1'] {
-    background-color: #CCFBFE;
-    box-shadow: 5px 5px 5px #99cdd1;
+    display: flex;
+    flex-direction: column;
+    background-color: #c9cba3;
+    align-items: center;
+    width: fit-content;
     left: 15vw;
     top: 20vh;
 }
 
+section[title='sec1'] img {
+    margin-left: auto;
+    margin-right: auto;;
+}
+
 section[title='sec2'] {
-    background-color: #CCFBFE;
-    box-shadow: 5px 5px 5px #91b8bb;
+    color: white;
+    background-color: #723d46;
     right: 15vw;
     top: 30vh;
 }
 
+section[title='sec2'] p {
+    color: white;
+}
+
 section[title='sec3'] {
-    background-color: #f3d6cc;
-    box-shadow: 5px 5px 5px #d8ac9e;
+    background-color: #CAB1BD;
     left: 20vw;
     top: 50vh;
 }
 
 section[title='sec4'] {
-    background-color: #CDD6DD;
-    box-shadow: 5px 5px 5px #b3bec7;
-    right: 20vw;
-    top: 70vh;
+    background-color: #CAB1BD;
+    left: 20vw;
+    top: 50vh;
+}
+
+section[title='sec5'] {
+    background-color: #CAB1BD;
+    left: 20vw;
+    top: 50vh;
 }

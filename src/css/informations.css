@@ -1,0 +1,40 @@
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: #f6f6f6;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+section.bloc_informations {
+    display: flex;
+    justify-content: left;
+    background-color:#0096C7 ;
+    margin: 5vh 10vw;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+div.corps_bloc {
+    margin: 1rem 1rem 1rem;
+}
+
+div.titre_bloc {
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#accueil {
+    transition: transform 0.7s;
+    display: flex;
+    justify-content: center;
+}
+
+#accueil:hover {
+    transform: scale(1.1);
+}

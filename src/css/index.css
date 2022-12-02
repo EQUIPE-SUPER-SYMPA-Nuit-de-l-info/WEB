@@ -7,9 +7,9 @@ p {
     color: black;
 }
 
-div {
-    display: flex;
-    gap: 10px
+a {
+    text-decoration: none;
+    color: black;
 }
 
 img {
@@ -48,12 +48,18 @@ section:hover, header:hover {
 section[title='sec1'] {
     background-color: #CCFBFE;
     box-shadow: 5px 5px 5px #99cdd1;
+    width: fit-content;
     left: 15vw;
     top: 20vh;
 }
 
+section[title='sec1'] a img {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 section[title='sec2'] {
-    background-color: #CCFBFE;
+    background-color: #ccfbfe;
     box-shadow: 5px 5px 5px #91b8bb;
     right: 15vw;
     top: 30vh;
